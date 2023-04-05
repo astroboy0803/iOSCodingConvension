@@ -1,0 +1,5 @@
+//___FILEHEADER___
+___VARIABLE_ImportValue___
+internal ___VARIABLE_typeChoice___ ___VARIABLE_className______VARIABLE_ChainValue___ {
+
+}

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>Kind</key>
+		<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+		<key>Description</key>
+		<string>This generates a new Protocol of class.</string>
+		<key>SortOrder</key>
+		<string>2</string>
+		<key>Platforms</key>
+		<array>
+			<string>com.apple.platform.iphoneos</string>
+		</array>
+		<key>Options</key>
+		<array>
+			<dict>
+				<key>Identifier</key>
+				<string>productName</string>
+				<key>Type</key>
+				<string>static</string>
+				<key>Default</key>
+				<string>___VARIABLE_className:identifier___</string>				
+			</dict>
+			<dict>
+				<key>Identifier</key>
+				<string>typeChoice</string>
+				<key>Type</key>
+				<string>static</string>
+				<key>Default</key>
+				<string>protocol</string>				
+			</dict>
+			<dict>
+				<key>Identifier</key>
+				<string>className</string>
+				<key>Type</key>
+				<string>text</string>
+				<key>Name</key>
+				<string>Name:</string>
+				<key>Description</key>
+				<string>Enter the Protocol Name ?</string>
+				<key>Required</key>
+				<string>YES</string>
+				<key>NotPersisted</key>
+				<true />
+			</dict>
+			<dict>				
+				<key>Identifier</key>
+				<string>ImportModule</string>
+				<key>Name</key>
+				<string>Import Module</string>
+				<key>Type</key>
+				<string>checkbox</string>
+				<key>Description</key>
+				<string>Whether import or not ?</string>
+				<key>Default</key>
+				<string>false</string>
+				<key>NotPersisted</key>
+				<true />
+				<key>Variables</key>
+				<dict>
+					<key>true</key>
+					<dict>
+						<key>ImportValue</key>
+						<string>&#x000A;import ___VARIABLE_InputModule:identifier___&#x000A;</string>
+					</dict>
+					<key>false</key>
+					<dict>
+						<key>ImportValue</key>
+						<string></string>
+					</dict>
+				</dict>
+			</dict>
+			<dict>
+				<key>Identifier</key>
+				<string>InputModule</string>
+				<key>Name</key>
+				<string></string>
+				<key>Type</key>
+				<string>text</string>
+				<key>Description</key>
+				<string>Enter the Module Name</string>
+				<key>Required</key>
+				<string>YES</string>
+				<key>NotPersisted</key>
+				<true />
+				<key>RequiredOptions</key>
+				<dict>
+					<key>ImportModule</key>
+					<array>
+						<string>true</string>
+					</array>
+				</dict>
+			</dict>
+			<dict>				
+				<key>Identifier</key>
+				<string>InheritConform</string>
+				<key>Name</key>
+				<string>Inherit Base Class or Conform Protocol</string>
+				<key>Type</key>
+				<string>checkbox</string>
+				<key>Description</key>
+				<string>Whether Inherit Base Class/Conform Protocol or not ?</string>
+				<key>Default</key>
+				<string>false</string>
+				<key>NotPersisted</key>
+				<true />
+				<key>Variables</key>
+				<dict>
+					<key>true</key>
+					<dict>
+						<key>ChainValue</key>
+						<string>: ___VARIABLE_InheritChain:identifier___</string>
+					</dict>
+					<key>false</key>
+					<dict>
+						<key>ChainValue</key>
+						<string></string>
+					</dict>
+				</dict>
+			</dict>
+			<dict>
+				<key>Identifier</key>
+				<string>InheritChain</string>
+				<key>Name</key>
+				<string></string>
+				<key>Type</key>
+				<string>text</string>
+				<key>Description</key>
+				<string>Enter the Inherit Base Class or Conform Protocol Name</string>
+				<key>Required</key>
+				<string>YES</string>
+				<key>NotPersisted</key>
+				<true />
+				<key>RequiredOptions</key>
+				<dict>
+					<key>InheritConform</key>
+					<array>
+						<string>true</string>
+					</array>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+</plist>

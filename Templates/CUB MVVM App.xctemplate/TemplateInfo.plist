@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Kind</key>
+        <string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+        <key>Identifier</key>
+        <string>tw.com.cathaybk.cubapp</string>
+        <key>Ancestors</key>
+        <array>
+            <string>com.apple.dt.unit.sceneLifecycleApplication</string>
+        </array>
+        <key>Description</key>
+        <string>This template provides a starting point for an application that uses a single view.
+            It provides a view controller to manage the view, and a storyboard or nib file that
+            contains the view.</string>
+        <key>Concrete</key>
+        <true />
+        <key>SortOrder</key>
+        <integer>0</integer>
+        <key>Image</key>
+        <dict>
+            <key>BundleImageName</key>
+            <string>app</string>
+            <key>BundleIdentifier</key>
+            <string>com.apple.dt.IDEKit</string>
+        </dict>        
+        <key>NameOfInitialFileForEditor</key>
+        <string>___VARIABLE_PrefixName______VARIABLE_ModuleName___ViewController.swift</string>
+        <key>Options</key>
+        <array>
+            <dict>
+                <key>Identifier</key>
+                <string>hasUnitAndUITests</string>
+            </dict>
+            <dict>
+                <key>Identifier</key>
+                <string>languageChoice</string>
+                <key>Override</key>
+                <string>Swift</string>
+                <key>NotPersisted</key>
+                <true />
+                <key>Units</key>
+                <dict>
+                    <key>Swift</key>
+                    <array>
+                        <dict>
+                            <key>Nodes</key>
+                            <array>
+                                <string>main.swift</string>
+                                <string>AppDelegate.swift</string>
+                                <string>SceneDelegate.swift</string>
+                                <string>___VARIABLE_PrefixName______VARIABLE_ModuleName___ViewController.swift</string>
+                                <string>___VARIABLE_PrefixName______VARIABLE_ModuleName___ViewModel.swift</string>
+                            </array>
+                            <key>Definitions</key>
+                            <dict>
+                                <key>main.swift</key>
+                                <dict>
+                                    <key>Path</key>
+                                    <string>main.swift</string>
+                                </dict>
+                                <key>AppDelegate.swift</key>
+                                <dict>
+                                    <key>Path</key>
+                                    <string>AppDelegate.swift</string>
+                                </dict>
+                                <key>SceneDelegate.swift</key>
+                                <dict>
+                                    <key>Path</key>
+                                    <string>SceneDelegate.swift</string>
+                                </dict>                                
+                                <key>___VARIABLE_PrefixName______VARIABLE_ModuleName___ViewController.swift</key>
+                                <dict>
+                                    <key>Path</key>
+                                    <string>mvvm-vc.swift</string>                                    
+                                </dict>
+                                <key>___VARIABLE_PrefixName______VARIABLE_ModuleName___ViewModel.swift</key>
+                                <dict>
+                                    <key>Path</key>
+                                    <string>mvvm-vm.swift</string>
+                                </dict>
+                            </dict>
+                        </dict>
+                    </array>
+                </dict>
+            </dict>
+            <dict>
+				<key>Identifier</key>
+				<string>productName</string>
+				<key>Type</key>
+				<string>static</string>
+				<key>Default</key>
+				<string>___VARIABLE_PrefixName:identifier______VARIABLE_ModuleName:identifier___</string>
+				<key>NotPersisted</key>
+				<true />
+			</dict>
+            <dict>
+				<key>Identifier</key>
+				<string>PrefixName</string>
+                <key>SortOrder</key>
+                <integer>98</integer>
+				<key>Type</key>
+				<string>text</string>
+				<key>Required</key>
+				<string>YES</string>
+				<key>Name</key>
+				<string>Class Prefix:</string>
+				<key>Description</key>
+				<string>The prefix of the class.</string>
+				<key>Default</key>
+				<string>CUB</string>
+				<key>NotPersisted</key>
+				<true />
+			</dict>
+			<dict>
+				<key>Identifier</key>
+				<string>ModuleName</string>
+                <key>SortOrder</key>
+                <integer>99</integer>
+				<key>Required</key>
+				<true />
+				<key>Name</key>
+				<string>Module Name:</string>
+				<key>Description</key>
+				<string>The name of the Module</string>
+				<key>Type</key>
+				<string>text</string>
+				<key>NotPersisted</key>
+				<true />
+			</dict>
+			<dict>
+				<key>Identifier</key>
+				<string>Combine</string>
+                <key>SortOrder</key>
+                <integer>100</integer>
+				<key>Required</key>
+				<string>YES</string>
+				<key>Name</key>
+				<string>automatic import Combine</string>
+				<key>Description</key>
+				<string>Whether import Combine or not ?</string>
+				<key>Type</key>
+				<string>checkbox</string>
+				<key>NotPersisted</key>
+				<true />
+                <key>Default</key>
+				<string>false</string>
+				<key>Variables</key>
+				<dict>
+					<key>true</key>
+					<dict>
+						<key>ImportValue</key>
+						<string>import Combine&#x000A;</string>
+					</dict>
+					<key>false</key>
+					<dict>
+						<key>ImportValue</key>
+						<string></string>
+					</dict>
+				</dict>
+			</dict>
+			<dict>				
+				<key>Identifier</key>
+				<string>XIB</string>
+                <key>SortOrder</key>
+                <integer>101</integer>
+				<key>Name</key>
+				<string>With XIB for user interface</string>
+				<key>Description</key>
+				<string>Whether create file with XIB or not ?</string>
+				<key>Type</key>
+				<string>checkbox</string>
+                <key>Default</key>
+				<string>false</string>
+				<key>NotPersisted</key>
+				<true />
+                <key>Units</key>                
+                <dict>
+                    <key>true</key>
+                    <array>
+                        <dict>
+                            <key>Nodes</key>
+                            <array>
+                                <string>___VARIABLE_PrefixName______VARIABLE_ModuleName___ViewController.xib</string>
+                            </array>
+                            <key>Definitions</key>
+                            <dict>
+                                <key>___VARIABLE_PrefixName______VARIABLE_ModuleName___ViewController.xib</key>
+                                <dict>
+                                    <key>Path</key>
+                                    <string>mvvm-vc.xib</string>
+                                </dict>                               
+                            </dict>
+                        </dict>
+                    </array>
+                </dict>
+				<key>Variables</key>
+				<dict>
+					<key>true</key>
+					<dict>
+						<key>vcInit</key>
+						<string>&#x000A;&#009;lazy var viewModel: ___VARIABLE_productName___ViewModel = .init()&#x000A;</string>
+					</dict>
+					<key>false</key>
+					<dict>
+						<key>vcInit</key>						
+						<string>
+	var viewModel: ___VARIABLE_productName___ViewModel
+
+	init() {
+		viewModel = .init()
+		super.init(nibName: nil, bundle: nil)
+	}
+
+	required init?(coder: NSCoder) {
+		fatalError("init(coder:) has not been implemented")
+	}	
+						</string>
+					</dict>
+				</dict>
+			</dict>
+        </array>
+    </dict>
+</plist>
