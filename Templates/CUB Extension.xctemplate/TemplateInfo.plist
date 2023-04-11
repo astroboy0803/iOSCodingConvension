@@ -20,7 +20,7 @@
 				<key>Type</key>
 				<string>static</string>
 				<key>Default</key>
-				<string>___VARIABLE_className:identifier___+Extension</string>				
+				<string>___VARIABLE_className___+Extension</string>				
 			</dict>
 			<dict>
 				<key>Identifier</key>
@@ -62,7 +62,7 @@
 					<key>true</key>
 					<dict>
 						<key>ImportValue</key>
-						<string>&#x000A;import ___VARIABLE_InputModule:identifier___&#x000A;</string>
+						<string>&#x000A;import ___VARIABLE_InputModule___&#x000A;</string>
 					</dict>
 					<key>false</key>
 					<dict>
@@ -110,7 +110,7 @@
 					<key>true</key>
 					<dict>
 						<key>ChainValue</key>
-						<string>: ___VARIABLE_InheritChain:identifier___</string>
+						<string>: ___VARIABLE_InheritChain___</string>
 					</dict>
 					<key>false</key>
 					<dict>

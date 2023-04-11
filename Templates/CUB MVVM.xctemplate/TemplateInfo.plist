@@ -18,7 +18,7 @@
 				<key>Type</key>
 				<string>static</string>
 				<key>Default</key>
-				<string>___VARIABLE_PrefixName:identifier______VARIABLE_ModuleName:identifier___</string>
+				<string>___VARIABLE_PrefixName______VARIABLE_ModuleName___</string>
 				<key>NotPersisted</key>
 				<true />
 			</dict>
@@ -58,7 +58,7 @@
 				<key>Required</key>
 				<string>YES</string>
 				<key>Name</key>
-				<string>automatic import Combine</string>
+				<string>Automatic import Combine</string>
 				<key>Description</key>
 				<string>Whether import Combine or not ?</string>
 				<key>Type</key>
@@ -87,7 +87,7 @@
 				<key>Identifier</key>
 				<string>XIB</string>
 				<key>Name</key>
-				<string>With XIB for user interface</string>
+				<string>Create XIB for User Interface</string>
 				<key>Description</key>
 				<string>Whether create file with XIB or not ?</string>
 				<key>Type</key>
