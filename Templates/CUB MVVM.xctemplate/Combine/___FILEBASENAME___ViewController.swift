@@ -7,8 +7,4 @@ internal class ___FILEBASENAME___: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-    }    
 }
